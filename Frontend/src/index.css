@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+* {
+  -webkit-scrollbar: none;
+  scrollbar-width: none;
+}
+
+.input {
+  @apply w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+.custom-select {
+  @apply appearance-none px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-slate-700 shadow-sm outline-none focus:ring-2 focus:ring-emerald-500 pr-8 bg-no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%239CA3AF%22%20d%3D%22M233.4%20406.6c12.5%2012.5%2032.8%2012.5%2045.3%200l192-192c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L256%20338.7%2086.6%20169.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3l192%20192z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right 0.75rem center;
+  background-size: 0.7em 0.7em;
+}
+
+
+/* PRINT STYLES */
+@media print {
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Only show the invoice and its children */
+  #printable-invoice, #printable-invoice *,
+  #invoice-print-area, #invoice-print-area * {
+    visibility: visible;
+  }
+
+  /* Position the invoice at the very top left */
+  #printable-invoice, #invoice-print-area {
+    position: static;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Thermal printer optimizations */
+  #printable-invoice table {
+    font-size: 12px;
+  }
+
+  #printable-invoice h1 {
+    font-size: 24px;
+  }
+
+  /* Ensure no background colors are lost */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide common UI elements */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Adjust page margins for narrow printers */
+  @page {
+    margin: 5mm;
+  }
+}
