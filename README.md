@@ -60,8 +60,8 @@ Follow these steps to run the Cafe POS System locally for development or testing
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Ang-Kimsor/Cafe-POS.git
-   cd Cafe-POS
+   git clone https://github.com/Ang-Kimsor/POS-Cafe.git
+   cd POS-Cafe
    ```
 
 2. **Backend Setup**
@@ -148,7 +148,7 @@ Here is the high-level folder structure:
 Contributions are welcome! Feel free to fork the repo, create feature branches, and submit pull requests. Please open issues for bugs or feature requests.
 
 <a href="https://github.com/Ang-Kimsor/Cafe-POS/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Ang-Kimsor/Cafe-POS" />
+  <img src="https://contrib.rocks/image?repo=Ang-Kimsor/POS-Cafe" />
 </a>
 
 ---
@@ -159,7 +159,7 @@ Contributions are welcome! Feel free to fork the repo, create feature branches, 
 
 - Telegram - [angkimsor@gmail.com](mailto:angkimsor@gmail.com)
 - Call Me ☎️ +85587932289
-- Project Link: [https://github.com/Ang-Kimsor/Cafe-POS](https://github.com/Ang-Kimsor/Cafe-POS)
+- Project Link: [https://github.com/Ang-Kimsor/Cafe-POS](https://github.com/Ang-Kimsor/POS-Cafe)
 
 ---
 
