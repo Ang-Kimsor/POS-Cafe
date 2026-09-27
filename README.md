@@ -12,6 +12,7 @@
 - [Getting Started 🚀](#getting-started-)
   - [Prerequisites ✅](#prerequisites-)
   - [Installation 💾](#installation-)
+  - [Superadmin Management CLI 👑](#superadmin-management-cli-)
 - [Folder Structure 📂](#folder-structure-)
 - [Usage 🧑‍💻](#usage-)
 - [Contributors 🤝](#contributors-)
@@ -75,6 +76,18 @@ Follow these steps to run the Cafe POS System locally for development or testing
 
    _Configure your `.env` file with your Database credentials, Telegram Bot Token, Telegram User ID, Telegram Group ID, Bakong Account ID, and Cloudinary API URL._
 
+   Run database migrations and seeders:
+   ```bash
+   php artisan migrate --seed
+   php artisan storage:link
+   ```
+
+   Create your initial Superadmin account:
+   ```bash
+   php artisan superadmin:create
+   ```
+
+   Start the backend development server:
    ```bash
    php artisan serve
    ```
@@ -89,6 +102,21 @@ Follow these steps to run the Cafe POS System locally for development or testing
 
 4. **Access the App**
    Open your browser and navigate to the localhost URL provided by Vite (usually `http://localhost:3000` or `http://localhost:5173`) to see the app running.
+
+### Superadmin Management CLI 👑
+
+The system provides built-in Artisan CLI commands to securely manage Superadmin access from the terminal:
+
+```bash
+# Create a new superadmin account interactively or with parameters:
+php artisan superadmin:create
+
+# Activate and restore a superadmin account:
+php artisan superadmin:activate email@example.com
+
+# Deactivate a superadmin account (sets is_active = 0):
+php artisan superadmin:deactivate email@example.com
+```
 
 ---
 

@@ -60,7 +60,7 @@ class CreateSuperadminCommand extends Command
 
         if ($user) {
             $this->error("Account creation failed: A user with email '{$email}' already exists.");
-            $this->line('If you wish to activate an existing account, please use command: php artisan superadmin:active');
+            $this->line('If you wish to activate an existing account, please use command: php artisan superadmin:activate');
 
             return Command::FAILURE;
         }

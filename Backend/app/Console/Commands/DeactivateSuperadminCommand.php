@@ -12,7 +12,7 @@ class DeactivateSuperadminCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'superadmin:inactive {email? : Email Address of the superadmin}';
+    protected $signature = 'superadmin:deactivate {email? : Email Address of the superadmin}';
 
     /**
      * The console command description.

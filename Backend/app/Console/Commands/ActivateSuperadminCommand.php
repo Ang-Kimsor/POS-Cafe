@@ -12,7 +12,7 @@ class ActivateSuperadminCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'superadmin:active {email? : Email Address of the superadmin}';
+    protected $signature = 'superadmin:activate {email? : Email Address of the superadmin}';
 
     /**
      * The console command description.
