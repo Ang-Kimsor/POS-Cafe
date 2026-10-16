@@ -52,7 +52,7 @@ const Sidebar = ({
       <div className="p-4 shrink-0 border-b border-white/10">
         <div className="font-bold flex justify-between items-center gap-2">
           <p className={`${!sidebarOpen && "text-[12px]"} truncate`}>
-            {sidebarOpen ? "Cafe System" : "CS"}
+            {sidebarOpen ? "Cafe POS System" : "CS"}
           </p>
           <button
             type="button"

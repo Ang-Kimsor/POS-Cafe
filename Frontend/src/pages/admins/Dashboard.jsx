@@ -233,7 +233,7 @@ export default function Dashboard() {
               onClick={() => navigate("/admin/reports/sales")}
               className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
             >
-              <span>View Sales Report</span>
+              <span>Detail</span>
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>
@@ -263,9 +263,9 @@ export default function Dashboard() {
             </div>
             <button
               onClick={() => navigate("/admin/reports/products")}
-              className="p-2 text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all"
-              title="View Product Report"
+              className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
             >
+              <span>Detail</span>
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>
@@ -303,7 +303,7 @@ export default function Dashboard() {
               onClick={() => navigate("/admin/reports/sales")}
               className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
             >
-              <span>Full Report</span>
+              <span>Detail</span>
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>
@@ -335,7 +335,7 @@ export default function Dashboard() {
               onClick={() => navigate("/admin/reports/products")}
               className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
             >
-              <span>View Insights</span>
+              <span>Detail</span>
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>

@@ -5,23 +5,32 @@ const LoadingContext = createContext();
 
 export const LoadingProvider = ({ children }) => {
   const [loadingCount, setLoadingCount] = useState(0);
+  const [loadingMessage, setLoadingMessage] = useState(null);
 
-  const showLoading = useCallback(() => {
+  const showLoading = useCallback((msg) => {
+    if (typeof msg === 'string' && msg.trim()) {
+      setLoadingMessage(msg);
+    }
     setLoadingCount(prev => prev + 1);
   }, []);
 
   const hideLoading = useCallback(() => {
-    setLoadingCount(prev => Math.max(0, prev - 1));
+    setLoadingCount(prev => {
+      const next = Math.max(0, prev - 1);
+      if (next === 0) setLoadingMessage(null);
+      return next;
+    });
   }, []);
 
   const forceHideLoading = useCallback(() => {
     setLoadingCount(0);
+    setLoadingMessage(null);
   }, []);
 
   const isLoading = loadingCount > 0;
 
   return (
-    <LoadingContext.Provider value={{ isLoading, showLoading, hideLoading, forceHideLoading }}>
+    <LoadingContext.Provider value={{ isLoading, loadingMessage, showLoading, hideLoading, forceHideLoading }}>
       {children}
     </LoadingContext.Provider>
   );
