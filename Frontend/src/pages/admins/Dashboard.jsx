@@ -231,10 +231,10 @@ export default function Dashboard() {
             </div>
             <button
               onClick={() => navigate("/admin/reports/sales")}
-              className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider leading-none"
             >
-              <span>Detail</span>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <span className="leading-none">Detail</span>
+              <FontAwesomeIcon icon={faChevronRight} className="text-[9px] shrink-0 relative -top-[1px]" />
             </button>
           </div>
           <div className="h-[350px] w-full">
@@ -263,10 +263,10 @@ export default function Dashboard() {
             </div>
             <button
               onClick={() => navigate("/admin/reports/products")}
-              className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider leading-none"
             >
-              <span>Detail</span>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <span className="leading-none">Detail</span>
+              <FontAwesomeIcon icon={faChevronRight} className="text-[9px] shrink-0 relative -top-[1px]" />
             </button>
           </div>
           <div className="h-[350px] w-full">
@@ -301,10 +301,10 @@ export default function Dashboard() {
             </div>
             <button
               onClick={() => navigate("/admin/reports/sales")}
-              className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider leading-none"
             >
-              <span>Detail</span>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <span className="leading-none">Detail</span>
+              <FontAwesomeIcon icon={faChevronRight} className="text-[9px] shrink-0 relative -top-[1px]" />
             </button>
           </div>
           <div className="h-[300px] w-full mt-auto">
@@ -333,10 +333,10 @@ export default function Dashboard() {
             </div>
             <button
               onClick={() => navigate("/admin/reports/products")}
-              className="flex items-center gap-2 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-[10px] font-bold text-[#087467] bg-emerald-50 hover:bg-[#087467] hover:text-white rounded-lg transition-all uppercase tracking-wider leading-none"
             >
-              <span>Detail</span>
-              <FontAwesomeIcon icon={faChevronRight} />
+              <span className="leading-none">Detail</span>
+              <FontAwesomeIcon icon={faChevronRight} className="text-[9px] shrink-0 relative -top-[1px]" />
             </button>
           </div>
           <div className="h-[300px] w-full mt-auto">
